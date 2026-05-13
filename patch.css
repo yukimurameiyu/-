@@ -1,0 +1,6 @@
+/* Patch: ensure engine editor modal overlays profile editor correctly and allow chips look active */
+#engineEditor.modal { z-index: 3000 !important; }
+.modal { z-index: 2000; }
+.status-like.is-liked .icon { transform: scale(1.05); }
+.status-like[aria-pressed="true"] { filter: saturate(1.2); }
+button.chip, .chip[role="button"] { cursor: pointer; }

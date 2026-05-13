@@ -1,0 +1,17 @@
+/* Rikkai Hotfix v3 */
+.inputbar{ position:sticky !important; bottom:0 !important; z-index:60 !important; }
+.rk-modal{ position:fixed; inset:0; display:none; z-index:120; }
+.rk-modal.open{ display:block; }
+.rk-modal .rk-overlay{ position:absolute; inset:0; background:rgba(0,0,0,.35); }
+.rk-dialog{ position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:min(92vw,520px); background:#fff; border-radius:14px; overflow:hidden; }
+.rk-head{ display:flex; justify-content:space-between; align-items:center; padding:12px 14px; border-bottom:1px solid #eee; font-weight:700; }
+.rk-body{ padding:12px 14px; display:grid; gap:10px; }
+.rk-body input{ height:36px; border:1px solid #e6e6e6; border-radius:10px; padding:0 10px; }
+.rk-actions{ display:flex; gap:10px; justify-content:flex-end; padding:8px 14px; border-top:1px solid #eee; }
+.rk-btn{ height:36px; padding:0 12px; border-radius:10px; border:1px solid #e6e6e6; background:#fff; }
+.rk-primary{ background:#6b5cff; border-color:#6b5cff; color:#fff; }
+
+
+/* Like bar touch fix */
+.status-likebar, .status-likebar *{ pointer-events:auto !important; }
+.status-likebar .like.on{ transform:scale(1.08); }
